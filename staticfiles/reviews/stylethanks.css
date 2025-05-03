@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at center, #dcfce7, #047857);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.thank-you-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0, 128, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
+.thank-you-container h1 {
+    color: #065f46;
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.thank-you-container p {
+    color: #374151;
+    font-size: 1.3rem;
+    margin-bottom: 24px;
+}
+
+/* Glassmorphism Styled Button */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgba(22, 196, 94, 0.8);
+    backdrop-filter: blur(15px);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: rgba(16, 185, 129, 0.9);
+    transform: scale(1.07);
+}
