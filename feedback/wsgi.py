@@ -11,6 +11,11 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
+import sys
+path = '/home/SaadiCodes/feedback'
+if path not in sys.path:
+    sys.path.append(path)
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'feedback.settings')
 
 application = get_wsgi_application()

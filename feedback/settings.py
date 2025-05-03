@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-+54*19#4@+@c$-=ad-2f0f8aebytbrv&qrfd%l38+4a6z$0l-k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['reviews.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 
 # Application definition
@@ -114,10 +114,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 
 DATABASES = {
     'default': dj_database_url.config(default='sqlite:///db.sqlite3')
